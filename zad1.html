@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+<body>
+<script>
+function sprawdzhaslo(form){
+    h=form.h.value;
+    h2=form.h2.value;
+    if(h!=h2){
+
+alert("haslo jest niepoprawne");
+    }
+else if(h==h2){
+    alert("zalogowano");
+}
+}
+
+</script>
+
+<form onsubmit="return sprawdzhaslo(this)">
+   Podaj login <input type="text" id="l" required minlength="4"><br>
+   Podaj haslo <input type="password" id="h" required minlength="4"><br>
+   Powtorz haslo <input type="password" id="h2" required minlength="4"><br>
+    <button onclick type="submit"  >rejestruj</button>
+    <input type="button" value="wyczysc">
+
+    </form>
+
+    
+</body>
+</html>
